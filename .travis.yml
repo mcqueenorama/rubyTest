@@ -1,0 +1,13 @@
+language: ruby
+rvm: 2.2.1
+script:
+  - env
+  - ls
+  - which ruby
+  - ruby --version
+  - which gem
+  - gem --version
+  - which rake
+  - echo QRUBY_VERSION `which ruby`
+  - echo QGEM_VERSION `which gem`
+  - rake --version
